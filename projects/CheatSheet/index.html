@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CSS Display & Positioning CheatSheet</title>
+        <link href="./styles.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Space+Mono&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>CSS Display & Positioning CheatSheet</h1>
+        <h3>Notes from Codecademy Fundamentals of CSS</h3>
+
+        <div id="z-index">
+            <h2 class="section-title">z-index</h2>
+
+            <h3 class="syntax">z-index: [int];</h3>
+            <ul>
+                <li>Specifies how far back or forward 
+                    an element appears when a web oage overlaps
+                </li>
+                <li>[int] value can be positive or negative</li>
+                <li>Element with highest [int] appears in foreground, while lower z-index 
+                    values appear further back
+                </li>
+            </ul>
+        </div>
+
+        <div id="position">
+            <h2 class="section-title">position</h2>
+
+            <h3 class="syntax">position: static;</h3>
+            <ul>
+                <li>Default value, does not need to be specified</li>
+            </ul>
+
+            <h3 class="syntax">position: relative;</h3>
+            <ul>
+                <li>Positions an element relative to where it would have
+                    originally been on the web page
+                </li>
+                <li>Must have at least one of the 
+                    offset properties (top, bottom, left, right)
+                </li>
+                <li>Offset properties, measured in px, em, or %, specify distance 
+                    FROM the top/bottom/left/right to the element
+                </li>
+            </ul>
+            <img src="./images/relativeExample.webp" alt="Example photo">
+
+
+            <h3 class="syntax">position: fixed;</h3>
+            <ul>
+                <li>Element with a fixed position is pinned to a specific spot
+                    on the page, regardless of scrolling
+                </li>
+                <li>Example: a navigation bar at the top of a page (may use offset
+                    properties top: 0px and left: 0px)
+                </li>
+            </ul>
+
+            <h3 class="syntax">position: absolute;</h3>
+            <ul>
+                <li>All other elements ignore an absolute element and act like 
+                    it is not on the page
+                </li>
+                <li>Removes an element entirely from the document flow</li>
+                <li>Example: a pop-up coupon on a shopping website</li>
+                <li>Positioned relative to its closest parent element;
+                    offset properties can be used to modify positioning
+                </li>
+            </ul>
+
+            <h3 class="syntax">position: sticky;</h3>
+            <ul>
+                <li>Uses top offset property</li>
+                <li>When the element is the specified distance from the top, it sticks 
+                    to the position it is in as you continue scrolling
+                </li>
+                <li>Once it reaches the bottom of its parent container, it unsticks</li>
+            </ul>
+        </div>
+
+        <div id="display">
+            <h2 class="section-title">display</h2>
+
+            <h3 class="syntax">display: inline;</h3>
+            <ul>
+                <li>Takes up as little space as possible</li>
+                <li>Appears on same line as other inline elements</li>
+                <li>Can't have width/height manually adjusted</li>
+                <li>Examples: Strong or Emphasis tags; Anchor for hyperlink</li>
+            </ul>
+
+            <h3 class="syntax">display: block;</h3>
+            <ul>
+                <li>Fill entire width of page by default, but width can be manually set</li>
+                <li>Examples: headings, paragraphs, divs, footers</li>
+            </ul>
+
+            <h3 class="syntax">display: inline-block;</h3>
+            <ul>
+                <li>Can appear next to each other and also have 
+                    width and height manually adjusted
+                </li>
+                <img src="./images/display-inline-block.webp" alt="Example photo">
+            </ul>
+        </div>
+
+        <div id="float">
+            <h2 class="section-title">float</h2>
+            <h3 class="syntax">float: left;</h3>
+            <h3 class="syntax">float: right;</h3>
+            <ul>
+                <li>Determines how far left or right an element should float within its parent element</li>
+                <li>Width must be specified</li>
+                <li>Commonly used for wrapping text around an image</li>
+                <img src="./images/float.webp" alt="Example photo">
+
+            </ul>
+        </div>
+
+        <div id="clear">
+            <h2 class="section-title">clear</h2>
+            <h3 class="syntax">clear: left;</h3>
+            <h3 class="syntax">clear: right;</h3>
+            <h3 class="syntax">clear: both;</h3>
+            <ul>
+                <li>Specifies if a specific side of an element should not be 
+                    touched by any other element within the contianing element
+                </li>
+                <li>Usually used in combination with float</li>
+            </ul>
+        </div>
+
+    </body>
+
+</html>
