@@ -9,3 +9,5 @@ FirstProject: Simple page with name and goals for coding
 Dasmoto: Simple page for an art supply store 
 
 CheatSheet: Cheatsheet for CSS Display and Positioning information from Codecademy
+
+StyleGuide: Basic CSS Style Guide
