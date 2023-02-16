@@ -12,6 +12,8 @@ CheatSheet: Cheatsheet for CSS Display and Positioning information from Codecade
 
 StyleGuide: Basic CSS Style Guide
 
+TeaCozy: Website for tea business **Not finished**
+
 ### Usage
 
 To view projects: Downoald individual project folder and open HTML file in web browser
