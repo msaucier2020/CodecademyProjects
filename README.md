@@ -14,4 +14,4 @@ StyleGuide: Basic CSS Style Guide
 
 ### Usage
 
-To view projects: Downoald files and open HTML in web browser
+To view projects: Downoald individual project folder and open HTML file in web browser
